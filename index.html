@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+<div id="app">
+    <input @click="clickMe(event,'0')" type="radio" name="name" id="keo" >Kéo
+    <input @click="clickMe(event,'1')" type="radio" name="name" id="bua" >Búa
+    <input @click="clickMe(event,'2')" type="radio" name="name" id="bao" >Bao
+
+    <button @click="randomIndex()">Chơi</button>
+
+    <p>{{b}}</p>
+
+</div>
+
+
+
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
