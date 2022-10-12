@@ -8,5 +8,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="sass" />
+    <orderEntry type="module" module-name="SCSS" />
   </component>
 </module>

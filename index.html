@@ -12,17 +12,24 @@
 
 
 <div id="app">
-    <input @click="clickMe(event,'0')" type="radio" name="name" id="keo" >Kéo
-    <input @click="clickMe(event,'1')" type="radio" name="name" id="bua" >Búa
-    <input @click="clickMe(event,'2')" type="radio" name="name" id="bao" >Bao
+    <button @click="clickMe(event,'Kéo')">Kéo</button>
+    <button @click="clickMe(event,'Búa')">Búa</button>
+    <button @click="clickMe(event,'Bao')">Bao</button>
+    <img v-if="nameCard === 'Kéo'" src="images/keo.png" alt="">
+    <img v-else-if="nameCard === 'Búa'"src="images/bua.png" alt="">
+    <img v-else-if="nameCard === 'Bao'" src="images/bao.png" alt="">
 
     <button @click="randomIndex()">Chơi</button>
 
-    <p>{{b}}</p>
+    <img v-if="computer === 'Kéo'" src="images/keo.png" alt="">
+    <img v-else-if="computer === 'Búa'"src="images/bua.png" alt="">
+    <img v-else-if="computer === 'Bao'" src="images/bao.png" alt="">
+    <button @click="resetScore()">Reset score</button>
+    <p>{{result}}</p>
+    <p>{{score}}</p>
+
 
 </div>
-
-
 
 
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
