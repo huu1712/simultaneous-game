@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import "variables";
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: $primaryColor;
+  @include center;
+  font-family: 'Nunito', sans-serif;
+}
+
+#app {
+  width: 500px;
+  height: 700px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.list-button_choose {
+  button {
+    @include button;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .keo {
+    background-color: aquamarine;
+  }
+
+  .bua {
+    background-color: #0f1630;
+  }
+
+  .bao {
+    background-color: aqua;
+  }
+}
+
+.list-button_play{
+  button{
+    @include button;
+  }
+}

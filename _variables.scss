@@ -1,0 +1,15 @@
+$primaryColor : #B8D8E0;
+
+@mixin center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin button{
+  border: none;
+  outline: none;
+  padding: 10px 25px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  margin: 10px;
+}

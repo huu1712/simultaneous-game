@@ -12,19 +12,27 @@
 
 
 <div id="app">
-    <button @click="clickMe(event,'Kéo')">Kéo</button>
-    <button @click="clickMe(event,'Búa')">Búa</button>
-    <button @click="clickMe(event,'Bao')">Bao</button>
+    <h2 class="title">Trò chơi tuổi thơ</h2>
+    <div class="list-button_choose">
+        <button class="keo" :class="{isClick: isClick}" @click="clickMe(event,'Kéo', 'red')">Kéo</button>
+        <button class="bua" :class="{isClick: isClick}" @click="clickMe(event,'Búa', 'green')">Búa</button>
+        <button class="bao" :class="{isClick: isClick}" @click="clickMe(event,'Bao', 'blue')">Bao</button>
+    </div>
     <img v-if="nameCard === 'Kéo'" src="images/keo.png" alt="">
     <img v-else-if="nameCard === 'Búa'"src="images/bua.png" alt="">
     <img v-else-if="nameCard === 'Bao'" src="images/bao.png" alt="">
 
-    <button @click="randomIndex()">Chơi</button>
+
 
     <img v-if="computer === 'Kéo'" src="images/keo.png" alt="">
     <img v-else-if="computer === 'Búa'"src="images/bua.png" alt="">
     <img v-else-if="computer === 'Bao'" src="images/bao.png" alt="">
-    <button @click="resetScore()">Reset score</button>
+
+    <div class="list-button_play">
+        <button @click="randomIndex()">Chơi</button>
+        <button @click="resetScore()">Làm mới</button>
+    </div>
+
     <p>{{result}}</p>
     <p>{{score}}</p>
 

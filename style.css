@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #B8D8E0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+}
+
+#app {
+  width: 500px;
+  height: 700px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.list-button_choose button {
+  border: none;
+  outline: none;
+  padding: 10px 25px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+}
+.list-button_choose button:hover {
+  cursor: pointer;
+}
+.list-button_choose .keo {
+  background-color: aquamarine;
+}
+.list-button_choose .bua {
+  background-color: #0f1630;
+}
+.list-button_choose .bao {
+  background-color: aqua;
+}
+
+.list-button_play button {
+  border: none;
+  outline: none;
+  padding: 10px 25px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
